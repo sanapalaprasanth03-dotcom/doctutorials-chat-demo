@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,22 +36,30 @@
     </section>
     <p class="hint">When Salesforce Embedded Messaging loads successfully, its chat launcher should appear at the bottom-right of this page.</p>
   </main>
-  <!-- Salesforce-provided Embedded Messaging installation snippet -->
-  <script type='text/javascript'>
+
+  <!-- New Salesforce Embedded Messaging GitHub Deployment -->
+  <script type="text/javascript">
     function initEmbeddedMessaging() {
       try {
         embeddedservice_bootstrap.settings.language = 'en_US';
+
         embeddedservice_bootstrap.init(
           '00Dg500000AwUnx',
-          'DocTutorials_New_Website_Chat',
-          'https://orgfarm-2d0984c5a4-dev-ed.develop.my.site.com/ESWDocTutorialsN1792388136725',
-          { scrt2URL: 'https://orgfarm-2d0984c5a4-dev-ed.develop.my.salesforce-scrt.com' }
+          'DocTutorials_GitHub_Chat',
+          'https://orgfarm-2d0984c5a4-dev-ed.develop.my.site.com/ESWDocTutorialsG1792648738128',
+          {
+            scrt2URL: 'https://orgfarm-2d0984c5a4-dev-ed.develop.my.salesforce-scrt.com'
+          }
         );
       } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
       }
     }
   </script>
-  <script type='text/javascript' src='https://orgfarm-2d0984c5a4-dev-ed.develop.my.site.com/ESWDocTutorialsN1792388136725/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+  <script
+    type="text/javascript"
+    src="https://orgfarm-2d0984c5a4-dev-ed.develop.my.site.com/ESWDocTutorialsG1792648738128/assets/js/bootstrap.min.js"
+    onload="initEmbeddedMessaging()">
+  </script>
 </body>
 </html>
