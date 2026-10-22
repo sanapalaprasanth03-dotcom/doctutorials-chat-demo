@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocTutorials | Student Support Demo</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f6f9ff; color: #132346; }
+    header { background: #fff; padding: 22px max(24px, 7vw); display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 14px #152f5a12; }
+    .logo { color: #0869e9; font-size: 25px; font-weight: 800; }
+    nav { color: #475569; font-size: 14px; }
+    main { max-width: 1160px; margin: auto; padding: 85px 25px; }
+    .eyebrow { color: #0869e9; font-weight: 700; }
+    h1 { font-size: clamp(35px, 5vw, 62px); max-width: 690px; line-height: 1.1; margin: 20px 0; }
+    .subtitle { color: #52637b; font-size: 19px; line-height: 1.6; max-width: 640px; }
+    .courses { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px; margin-top: 65px; }
+    .course { background: white; border: 1px solid #e4eaf5; border-radius: 16px; padding: 28px; box-shadow: 0 6px 24px #152f5a0a; }
+    .course h2 { font-size: 20px; }
+    .course p { color: #637189; }
+    .hint { margin-top: 50px; color: #5c6980; font-size: 14px; }
+    @media(max-width:650px) { nav { display:none; } main { padding-top: 60px; } }
+  </style>
+</head>
+<body>
+  <header><div class="logo">DocTutorials</div><nav>Courses &nbsp;&nbsp; NEET PG &nbsp;&nbsp; INICET &nbsp;&nbsp; FMGE &nbsp;&nbsp; Support</nav></header>
+  <main>
+    <div class="eyebrow">WELCOME TO DOCTUTORIALS</div>
+    <h1>Learn from India's Best Medical Faculty</h1>
+    <p class="subtitle">Explore your medical learning journey with DocTutorials. Have a question about your course, subscription or video access? Connect with our support team.</p>
+    <section class="courses">
+      <div class="course"><h2>NEET PG Courses</h2><p>Prepare with expert faculty and structured learning.</p></div>
+      <div class="course"><h2>INICET Courses</h2><p>Focused preparation and updated content.</p></div>
+      <div class="course"><h2>FMGE Courses</h2><p>Comprehensive learning and exam preparation.</p></div>
+    </section>
+    <p class="hint">When Salesforce Embedded Messaging loads successfully, its chat launcher should appear at the bottom-right of this page.</p>
+  </main>
+  <!-- Salesforce-provided Embedded Messaging installation snippet -->
+  <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+      try {
+        embeddedservice_bootstrap.settings.language = 'en_US';
+        embeddedservice_bootstrap.init(
+          '00Dg500000AwUnx',
+          'DocTutorials_New_Website_Chat',
+          'https://orgfarm-2d0984c5a4-dev-ed.develop.my.site.com/ESWDocTutorialsN1792388136725',
+          { scrt2URL: 'https://orgfarm-2d0984c5a4-dev-ed.develop.my.salesforce-scrt.com' }
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    }
+  </script>
+  <script type='text/javascript' src='https://orgfarm-2d0984c5a4-dev-ed.develop.my.site.com/ESWDocTutorialsN1792388136725/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
